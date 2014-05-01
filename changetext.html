@@ -1,0 +1,16 @@
+<html>
+<head>
+
+	<title>Change text using Javascript</title>
+
+	<script type="text/javascript">
+	function updatetext(){
+		document.getElementById('colortext').innerHTML = 'red';
+	}
+	</script>	
+</head>
+<body>
+	The apple is <span id='colortext'>green</span>.
+	<input type='button' onclick='updatetext()' value='Change Text'/>
+</body>
+</html>
