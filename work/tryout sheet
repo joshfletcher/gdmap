@@ -1,0 +1,25 @@
+<HTML>
+<head>
+<title>javascript sandbox</title>
+<script>
+
+function sayhello(message) {
+alert("Hi, something just happened: " + foo + " <> " + faa)}
+
+Username: <input type="text" name="user">
+ <input type="text" name="faabox">
+<input type="submit" value="push me"  onclick="sayhello(user.value, message.value )">
+
+<p id="p1">The paragraph above was changed by a script.</p>
+</form>
+document.getElementById("p1").innerHTML="New text!";
+   
+</script>
+
+</head>
+
+<body>hello world
+</body>
+
+
+</HTML>
