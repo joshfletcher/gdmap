@@ -1,0 +1,19 @@
+<HTML>
+<head>
+<title>javascript sandbox</title>
+<script>
+function sayhello(message) {
+alert("Hi, something just happened: " + "user" +  <>  + "pasword")
+}
+
+</script>
+<form>
+Username: <input type="text" name= "user">
+pasword <input type="text" name= "pasword">
+<input type="submit" value="click"  
+onclick="(message) (user.value, pasword.value )">
+</form>
+<body>
+hello world
+</body>
+</HTML>
