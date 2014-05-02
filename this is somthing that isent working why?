@@ -1,0 +1,56 @@
+<html>
+<head>
+<script>
+
+//alert("LOADING ...")
+//alert("LOAding ...")
+//alert("incorect ")
+//alert("this page does not exit there is no such thing")
+import java.util.Scanner; 
+public class MyPassword{ 
+public static void main(String[] args) 
+{ 
+final int LIMIT = 3; 
+int count = 0; 
+String username1 = "john"; 
+String username2; 
+String password1 = "abc123"; 
+String password2;
+
+Scanner scan = new Scanner (System.in); 
+
+while(true){ 
+System.out.print ("Enter Username: "); 
+username2 = scan.nextLine(); 
+
+if (username1.equals(username2)){ 
+while(count < LIMIT){ 
+System.out.print("Enter Password: "); 
+password2 = scan.nextLine(); 
+if(password2.equals(password1)){ 
+System.out.println("Welcome!"); 
+} 
+else{ 
+System.out.println("Incorrect entry. Please try again."); 
+count++; 
+} 
+} 
+System.out.println("Your 3 tries are up!"); 
+System.out.println("Wiping hard drive!"); 
+System.exit(0); 
+} 
+else{ 
+System.out.println("Incorrect username. Please try again."); 
+} 
+} 
+} 
+}
+</script>
+
+</head>
+
+<body>hello world
+</body>
+
+
+</html>
