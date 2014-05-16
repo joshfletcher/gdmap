@@ -1,0 +1,23 @@
+<HTML> 
+<head>
+<title>stuff using java script</title>
+<script> 
+function myfunction(txt) { 
+    document.getElementById("demo").innerHTML = txt
+} 
+</script> 
+<body> 
+<p>
+wich is your favourite
+</p>
+
+<form> 
+<input type="button" onclick="myfunction('Good Morning!')" value="choclate icecream"> 
+<input type="button" onclick="myfunction('Good Evening!')" value="vanella icecream"> 
+</form> 
+
+<p id="demo"></p>
+
+</body> 
+</head>
+</HTML>
