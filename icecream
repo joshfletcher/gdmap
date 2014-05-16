@@ -3,21 +3,89 @@
 <title>stuff using java script</title>
 <script> 
 function myfunction(txt) { 
-    document.getElementById("demo").innerHTML = txt
+    document.getElementById("123").innerHTML = txt
 } 
 </script> 
-<body> 
+<body>
+
+<p>Click the button to create a Checkbox.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "checkbox");
+    document.body.appendChild(x);
+}
+</script>
+
 <p>
 wich is your favourite
 </p>
-
 <form> 
-<input type="button" onclick="myfunction('Good Morning!')" value="choclate icecream"> 
-<input type="button" onclick="myfunction('Good Evening!')" value="vanella icecream"> 
+<input type="button" onclick="myfunction('good decision!')" value="chocolate icecream"> 
+<input type="button" onclick="myfunction('nice choice!')" value="vainella icecream"> 
 </form> 
-
+<p id="123"></p>
+<p>
+===============================================
+</p>
+<button onclick="getElementById('demo').innerHTML=Date()">The time is?</button>
 <p id="demo"></p>
+<p>
+===============================================
+</p>
+<p>Click the button to create a Checkbox.   :-) (it's fun!)</p>
 
-</body> 
-</head>
-</HTML>
+<button onclick="myFunction()">Try making some checkboxes</button>
+
+<script>
+function myFunction() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "checkbox");
+    document.body.appendChild(x);
+}
+</script>
+<p>
+===============================================
+</p>
+<details id="extra stuff">
+Some additional details...
+like banas
+</details>
+
+<script>
+function bla bla()
+{
+var x = document.getElementById("extra stuff");
+x.open=true;
+}
+</script>
+<p>
+===============================================
+</p>
+<h3>To do any thing else you must enter your first and last name.</h3>
+
+<form id="myForm" action="form_action.asp">
+  First name: <input type="text" name="fname" value="do not do this because there"><br>
+  Last name: <input type="text" name="lname" value="is currently a problem with it"><br>
+  <input type="submit" value="Submit">
+</form>
+<p id="gmo"></p>
+
+<button onclick="qwe()">Try it</button>
+
+<script>
+function myFunction()
+{
+var x = document.getElementById("myForm").action;
+document.getElementById("gmo").innerHTML = x;
+}
+</script>
+<p>
+===============================================
+</p>
+
+</body>
+</html>
